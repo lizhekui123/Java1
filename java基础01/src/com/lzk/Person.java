@@ -33,5 +33,9 @@ public class Person {
         } else {
             System.out.println("不大于10");
         }
+        for (int i = 0; i < 20; i++) {
+            x++;
+        }
+        System.out.println(x);
     }
 }
