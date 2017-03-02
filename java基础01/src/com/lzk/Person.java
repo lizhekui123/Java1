@@ -5,37 +5,37 @@ package com.lzk;
  * Person类
  */
 public class Person {
-    public static void main(String[] args)
-    {
-        System.out.println("Hello World!");
-        int x = 103;
-        System.out.println("x的值为" + x);
-        /**
-         * 一个数字会被编译器默认为int型，我们可以在数字后添加大写的L来告诉编译器此数字是long型
-         */
-        long y = 17896529786562L;//long型后面要加L
+    /**
+     * 对属性的封装
+     */
+    private String name;
+    private int age;
+    private String hobby;
 
-        byte a = 127;
+    /**
+     * setter&&getter
+     */
+    public String getName() {
+        return name;
+    }
 
-        a = (byte)(a + 1);
+    public void setName(String name) {
+        this.name = name;
+    }
 
-        System.out.println("" + a);
+    public int getAge() {
+        return age;
+    }
 
-        // 10.5这种带小数的数字,编译器会默认为是double类型
-        float z = 10.5f;
-        double c = 10.5;
-        char d = 'a';
-        boolean e = true;
+    public void setAge(int age) {
+        this.age = age;
+    }
 
-        if (x > 10)
-        {
-            System.out.println(x);
-        } else {
-            System.out.println("不大于10");
-        }
-        for (int i = 0; i < 20; i++) {
-            x++;
-        }
-        System.out.println(x);
+    public String getHobby() {
+        return hobby;
+    }
+
+    public void setHobby(String hobby) {
+        this.hobby = hobby;
     }
 }
